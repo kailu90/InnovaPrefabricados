@@ -5,6 +5,7 @@
 ******************************************/
 :root {
     --primary:rgb(255, 111, 0);
+    --secondary: rgb(252, 239, 230);
 }
 
 
@@ -148,6 +149,42 @@ body {
 
 /******************************************
 
+            ?GALERY
+
+******************************************/
+
+
+.galery_container {   
+    margin: 100px auto;
+    padding: 50px;
+    background-color: var(--secondary);   
+}
+
+.galery_title {
+    margin: 30px auto;
+    font-size: 3rem;    
+    width: max-content;
+    color: var(--primary);
+    text-shadow: 2px 2px 4px black;
+}
+
+.galery_slider {
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.galery_items_container {
+    display: flex;
+    margin: 100px 0;
+    gap: 20px;
+}
+
+
+
+
+/******************************************
+
             ?PROJECTS
 
 ******************************************/
@@ -209,8 +246,7 @@ body {
 .footer_container {
     display: flex;
     height: max-content;
-    justify-content: space-around;
-    margin: 50px 0; 
+    justify-content: space-around;    
     padding: 50px 100px;
     box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);   
 }
