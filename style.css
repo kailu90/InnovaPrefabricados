@@ -16,11 +16,15 @@ li {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 h2 {
     font-size: 1.4rem;
+}
+
+body {
+    position: relative;
 }
 
 
@@ -63,6 +67,23 @@ h2 {
     padding: 10px;
     width: max-content;   
 }
+
+
+
+
+
+
+
+/******************************************
+
+            ?MAIN
+
+******************************************/
+
+.main_container {
+    margin: 50px 0;
+}
+
 
 
 
@@ -136,21 +157,37 @@ h2 {
     height: max-content;
     justify-content: space-around;
     margin: 50px 0; 
-    padding: 50px 0;
+    padding: 50px 100px;
     box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);   
 }
 
 .footer_item {
-    max-width: 30%; 
+    max-width: 400px; 
     display: flex;
     align-items: center;
 }
 
 .footer_item img {
-    max-width: 100px;
+    max-width: 40px;
 }
 
 .footer_item .text_container {
     padding: 10px;
 }
 
+.btn-contact {
+    width: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    z-index: 1;
+    color: #fff;
+    background-color: #44c654;
+    border-color: #44c654;
+    border-radius: 50% !important;
+    height: 60px;
+}
+
+.btn-contact img {
+    width: 100%;
+}
