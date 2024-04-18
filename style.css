@@ -3,6 +3,11 @@
             ?GENERALES
 
 ******************************************/
+:root {
+    --primary:rgb(255, 111, 0);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -69,11 +74,14 @@ body {
 
 .header_navbar li {
     padding: 10px;
-    width: max-content;   
+    width: max-content; 
+    border-top: 2px solid transparent;
+    color:var(--primary);
+    font-weight: bold;  
 }
 
 .header_navbar li:hover {
-    border-top: 2px solid orange;
+    border-top: 2px solid var(--primary);   
 }
 
 
@@ -99,6 +107,43 @@ body {
 
 
 
+/******************************************
+
+            ?MISION
+
+******************************************/
+
+.mision_container {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mision_title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+    text-shadow: 2px 2px 4px black;
+}
+
+.mision_text {
+    max-width: 50%;
+}
+
+.mision_text p {
+    margin-bottom: 10px;
+}
+
+.mision_img {
+    max-width: 50%;
+}
+
+.mision_img img {
+    width: 400px;
+}
+
 
 
 /******************************************
@@ -112,6 +157,7 @@ body {
     justify-content: center;
     font-size: 3rem;
     margin: 10px 0;
+    text-shadow: 2px 2px 4px black;
 }
 
 .project_container {
