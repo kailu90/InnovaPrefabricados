@@ -98,7 +98,7 @@ body {
 ******************************************/
 
 .main_container {
-    margin: 50px 0;
+    margin: 50px 0 0 0;
 }
 
 
@@ -155,7 +155,7 @@ body {
 
 
 .galery_container {   
-    margin: 100px auto;
+    margin: 100px auto 0 auto;
     padding: 50px;
     background-color: var(--secondary);   
 }
