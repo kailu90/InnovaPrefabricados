@@ -139,8 +139,13 @@ body {
 .slider img {
     width: 90vw;
     height: 100%;  
+    object-fit: cover;
 }
 
+.slider .btn_slider {
+    width: 200px;
+    height: 50px;
+}
 
 
 /******************************************
@@ -216,6 +221,12 @@ body {
     overflow-x: scroll;
 }
 
+.galery_item img {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+}
+
 
 
 
@@ -246,14 +257,15 @@ body {
     align-items: end;
     justify-content: flex-start;
     padding: 0 20px 10px 20px;
+    background-size: cover;
 }
 
 .project_one {
-    background-image: url(./img/casa_dos_niveles_tradicional.jpeg);
+    background-image: url(./img/cúbica_alcalá.jpg);    
 }
 
 .project_two {
-    background-image: url(./img/casa_rural.jpeg);
+    background-image: url(./img/cúbica_tribunas.jpg);
 }
 
 .project_three {
