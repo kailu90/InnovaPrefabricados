@@ -8,9 +8,10 @@ let numImages = 4;
 
 setInterval(function () {
     let percentage = index * -100;
+    slider.style.transition = "transform 1s ease";
     slider.style.transform = "translateX(" + percentage + "%)";
     index++;   
     if (index >= numImages) {
         index = 0; 
     }  
-},5000);
+},10000);
