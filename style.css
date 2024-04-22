@@ -126,7 +126,7 @@ body {
     width: 90vw;     
     height: 100%; 
     margin: 0 auto;  
-    /*transform: translateX(-100%)*/;  
+    transform: translateX(-300%);  
 }
 
 .slider {  
@@ -134,7 +134,7 @@ body {
     width: 90vw;    
     height: 100%; 
     margin: 0 auto; 
-    object-fit: fill;    
+    object-fit: contain;    
 }
 
 .slider1 {
@@ -174,7 +174,15 @@ body {
     left: calc(50% - 50px);
     width: 100px;
     border: none;
-   }
+}
+
+.cubica_slider {
+    background-image: url(./img/cubica_slider.png);
+}
+
+.tradicional_slider {
+    background-image: url(./img/tradicional_slider.png);
+}
 
 .text_slider {
     display: flex;
