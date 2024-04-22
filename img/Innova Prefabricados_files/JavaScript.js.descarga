@@ -6,7 +6,7 @@ let index = 1;
 
 let numImages = 4;
 
-setInterval(function () {
+/*setInterval(function () {
     let percentage = index * -100;
     slider.style.transition = "transform 1s ease";
     slider.style.transform = "translateX(" + percentage + "%)";
