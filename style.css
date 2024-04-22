@@ -168,6 +168,11 @@ body {
 
 .nav_slider:hover {
     background-color: var(--primary);
+    cursor: pointer;
+}
+
+.nav_slider:visited {
+    background-color: var(--primary);
 }
 
 .slider_container_elements {
