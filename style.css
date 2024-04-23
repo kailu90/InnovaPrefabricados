@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 a {
@@ -33,6 +34,7 @@ h2 {
 
 body {
     position: relative;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -148,6 +150,7 @@ body {
 
 .arrow-icon:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .nav_slider_container {
@@ -369,7 +372,7 @@ body {
 ******************************************/
 
 
-.galery_container {   
+.galery_container {    
     margin: 0 auto;
     padding: 50px;     
 }
@@ -382,7 +385,7 @@ body {
     text-shadow: 2px 2px 4px black;
 }
 
-.galery_slider {
+.galery_slider {   
     max-width: 1350px;
     margin: 0 auto;
     overflow: hidden;
@@ -393,6 +396,7 @@ body {
     margin: 100px 0;
     gap: 20px;
     overflow-x: scroll;
+    padding: 50px; 
 }
 
 .galery_item img {
@@ -509,4 +513,8 @@ body {
 
 .btn-contact img {
     width: 100%;
+}
+
+.btn-contact img:hover {
+    scale: 1.2;
 }
