@@ -81,21 +81,30 @@ let navSlider4 = document.querySelector(".nav_slider4");
 
 navSlider1.addEventListener("click" , function() {
     console.log("click navSlider 1");
-  
+    let percentage = 0;
+    slider.style.transition = "transform 1s ease";
+    slider.style.transform = "translateX(" + percentage + "%)";  
 });
 
 navSlider2.addEventListener("click" , function() {
     console.log("click navSlider 2");
+    let percentage = -100;
+    slider.style.transition = "transform 1s ease";
+    slider.style.transform = "translateX(" + percentage + "%)";  
   
 });
 
 navSlider3.addEventListener("click" , function() {
     console.log("click navSlider 3");
-  
+    let percentage = -200;
+    slider.style.transition = "transform 1s ease";
+    slider.style.transform = "translateX(" + percentage + "%)";  
 });
 
 navSlider4.addEventListener("click" , function() {
     console.log("click navSlider 4");
-  
+    let percentage = -300;
+    slider.style.transition = "transform 1s ease";
+    slider.style.transform = "translateX(" + percentage + "%)";  
 });
 
