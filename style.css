@@ -173,10 +173,9 @@ body {
     cursor: pointer;
 }
 
-.nav_slider:visited {
-    background-color: var(--primary);
+.nav_slider.activo {
+    background-color: var(--primary);    
 }
-
 
 
 
@@ -344,44 +343,72 @@ body {
 
 
 
+
 /******************************************
 
-            ?MISION
+            ?PROJECTS
 
 ******************************************/
 
-.mision_container {
+.project_container {
     display: flex;
-    min-width: 1500px;
-    padding: 100px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    margin: 50px 0;
     background-color: var(--secondary);
+    padding: 0 0 100px 0;
 }
 
-.mision_title {
+.project_title {
+    display: flex;
+    justify-content: center;
     font-size: 3rem;
-    margin-bottom: 20px;
-    color: var(--primary);
+    margin: 50px 0;
     text-shadow: 2px 2px 4px black;
+    color: var(--primary);
 }
 
-.mision_text {
-    max-width: 50%;
+.project__items {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 300px); 
+    grid-gap: 20px;    
+}   
+
+.project_card {
+    display: flex;  
+    height: 300px;
+    align-items: end;
+    justify-content: flex-start;
+    padding: 0 20px 10px 20px;
+    background-size: cover;
+    background-image: url(./img/imagen_construcción.png);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-.mision_text p {
-    margin-bottom: 10px;
+.project_card .title {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    color: #fff;
+    font-size: 2rem;
 }
 
-.mision_img {
-    max-width: 50%;
+.project_one {
+    background-image: url(./img/cúbica_alcalá.jpg);    
 }
 
-.mision_img img {
-    width: 400px;
+.project_two {
+    background-image: url(./img/cúbica_tribunas.jpg);
 }
+
+.project_three {
+    background-image: url(./img/casa_rural_2.jpeg);
+}
+
+
+
+
 
 
 
@@ -397,8 +424,7 @@ body {
 
 
 .galery_container {    
-    margin: 0 auto;
-    padding: 50px;     
+    margin: 0 auto;     
 }
 
 .galery_title {
@@ -417,7 +443,7 @@ body {
 
 .galery_items_container {
     display: flex;
-    margin: 100px 0;
+    margin: 0 0 100px 0;
     gap: 20px;
     overflow-x: scroll;
     padding: 50px; 
@@ -431,61 +457,6 @@ body {
 
 
 
-
-
-
-
-
-/******************************************
-
-            ?PROJECTS
-
-******************************************/
-
-.title_projects {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    margin: 10px 0;
-    text-shadow: 2px 2px 4px black;
-}
-
-.project_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Distribuye los elementos en columnas de mínimo 200px y se adaptan al ancho de la pantalla */
-    grid-gap: 20px; 
-    margin: 50px 50px;
-}
-
-.project_card {
-    display: flex;  
-    height: 300px;
-    align-items: end;
-    justify-content: flex-start;
-    padding: 0 20px 10px 20px;
-    background-size: cover;
-}
-
-.project_one {
-    background-image: url(./img/cúbica_alcalá.jpg);    
-}
-
-.project_two {
-    background-image: url(./img/cúbica_tribunas.jpg);
-}
-
-.project_three {
-    background-image: url(./img/casa_rural_2.jpeg);
-}
-
-.title_project {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    align-items: center;
-    color: #fff;
-    font-size: 2rem;
-}
 
 
 
