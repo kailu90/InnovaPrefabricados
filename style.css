@@ -116,17 +116,16 @@ body {
 
 /******************************************
 
-            ?SLIDER
+            ?ARROW
 
 ******************************************/
 
-.slider_container {
-    position: relative;
-    width: 90vw;
-    height: 500px;
+
+.arrow_container {
+    position: absolute;
     display: flex;
-    overflow: hidden; 
-    margin: 50px auto;   
+    width: 100vw;
+    height: 500px;
 }
 
 .back_arrow_slider {
@@ -177,6 +176,31 @@ body {
 .nav_slider:visited {
     background-color: var(--primary);
 }
+
+
+
+
+
+
+
+
+
+
+/******************************************
+
+            ?SLIDER
+
+******************************************/
+
+.slider_container {
+    position: relative;
+    width: 90vw;
+    height: 500px;
+    display: flex;
+    overflow: hidden; 
+    margin: 50px auto;   
+}
+
 
 .slider_container_elements {
     display: flex; 
