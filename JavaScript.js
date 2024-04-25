@@ -60,17 +60,17 @@ let arrowBack = document.querySelector(".arrow_back")
 let arrowNext = document.querySelector(".arrow_next")
 
 arrowBack.addEventListener("click" , function() { 
-    if (percentage === 0) {        
+    if (percentage === 0) {                
         percentage -= 300;    
         actualizarSlider(); 
-        console.log("click flecha arrow")
-        pintarNavSlider();         
+        pintarNavSlider();
+        console.log("click flecha arrow")             
     } 
     else {
         percentage += 100;    
         actualizarSlider();
-        console.log("click flecha arrow 2")
-        pintarNavSlider();   
+        pintarNavSlider();
+        console.log("click flecha arrow 2")     
     }   
 });
 
@@ -86,15 +86,15 @@ arrowBack.addEventListener("click" , function() {
 arrowNext.addEventListener("click" , function() {     
     if (percentage === -300) {        
         percentage += 300;    
-        actualizarSlider(); 
+        actualizarSlider();
+        pintarNavSlider(); 
         console.log("click flecha next")
-        pintarNavSlider();              
     }
     else {   
         percentage -= 100;    
         actualizarSlider();
+        pintarNavSlider();
         console.log("click flecha next 2")
-        pintarNavSlider();          
     }         
 });
 

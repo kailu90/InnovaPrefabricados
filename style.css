@@ -129,20 +129,19 @@ body {
 }
 
 .arrow {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;        
-        width: 50px;
-        height: 50px;
-        background-color: gray;
-        border-radius: 50%; 
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;        
+    width: 50px;
+    height: 50px;    
 }
 
 .back_arrow_slider {  
     position: absolute;
     transform: rotate(180deg);
-    top: 230px;
+    top: 200px;
     left: 20px;    
 }
 
@@ -156,7 +155,7 @@ body {
 
 .next_arrow_slider {
     position: absolute;    
-    top: 230px;
+    top: 200px;
     right: 30px;
 }
 
