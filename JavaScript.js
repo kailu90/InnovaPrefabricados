@@ -68,14 +68,14 @@ arrowNext.addEventListener("click" , function() {
 //con setInterval la función se ejecuta por intervalos definidos 
 //En este caso cada 10 segundos el slider va pasando
 
-setInterval(function () {   
+/*setInterval(function () {   
     percentage = index * -100;
     actualizarSlider();   
     index++; 
     if (index >= numImages) {
         index = 0; 
     }  
-},6000);
+},6000);*/
 
 
 
