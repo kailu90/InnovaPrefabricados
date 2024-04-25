@@ -233,112 +233,12 @@ body {
     object-fit: contain;    
 }
 
-.agenda_cita_slider2 {
-    position: absolute;
-    bottom: 150px;
-    left: 163%;
-    background-color: var(--primary);
-    border: 1px solid transparent;
-    color: var(--secondary);
-}
-
-.agenda_cita_slider2:hover {
-    opacity: 0.5;
-    border: 1px solid transparent;
-    color: var(--secondary);
-    font-weight: bold;
-}
-
-.slider4 {
-    background-color: var(--secondary);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;    
-    gap: 50px;
-    padding: 50px 100px;
-    text-align: center; 
-    margin: 0 auto;     
-}
-
-.slider .slider_son {
-    position: relative;
-    width: 300px;
-    height: 400px;        
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}
-
-.slider4 .slider_son .btn_slider {
-    position: absolute;
-    bottom: -10px;
-    left: calc(50% - 75px);
-    width: 150px;
-    border: none;
-    background-color: var(--primary);
-    color: var(--secondary);
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 0 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}
-
-.slider4 .slider_son .btn_slider:hover {
-   opacity: 0.9;
-   cursor: pointer;   
-}
-
-.cubica_slider {
-    background-image: url(./img/cubica_slider.png);
-}
-
-.tradicional_slider {
-    background-image: url(./img/tradicional_slider.png);
-}
-
-.chalet_slider {
-    background-image: url(./img/casa_chalet2.jpeg);
-}
-
-.text_slider {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 400px;
-    color:var(--primary);
-}
-
-.text_slider h2 {
-  font-size: 3rem;
-  color: var(--primary);
-  margin-bottom: 20px;
-}
-
 .slider img {
     width: 90vw;
     height: 100%;  
     object-fit: contain;
 }
 
-.slider .btn_slider {
-    width: 200px;
-    height: 50px;
-}
-
-.agenda_cita_slider4 {
-    background-color: var(--primary);
-    color: var(--secondary);
-    border: 1px solid transparent;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-.agenda_cita_slider4:hover {
-    cursor: pointer;
-    opacity: 0.8;
-}
 
 
 
