@@ -185,13 +185,17 @@ body {
     margin: 5px;
 }
 
+.nav_slider1 {
+    background-color: black;
+}
+
 .nav_slider:hover {
-    background-color: var(--primary);
+    background-color: black;
     cursor: pointer;
 }
 
 .nav_slider.activo {
-    background-color: var(--primary);    
+    background-color: black;    
 }
 
 
