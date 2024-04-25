@@ -21,7 +21,6 @@ function actualizarSlider() {
 //Borra nav slider anterior y pinta el activo
 
 function pintarNavSlider() {
-
 if (index === 0) {
     console.log("slider1")  
     navSlider1.style.backgroundColor = "black";   
@@ -61,16 +60,18 @@ let arrowBack = document.querySelector(".arrow_back")
 let arrowNext = document.querySelector(".arrow_next")
 
 arrowBack.addEventListener("click" , function() { 
-    if (percentage === 0) {       
+    if (percentage === 0) {        
         percentage -= 300;    
-        actualizarSlider();          
-    }
+        actualizarSlider(); 
+        console.log("click flecha arrow")
+        pintarNavSlider();         
+    } 
     else {
-        console.log("click flecha atrás");
         percentage += 100;    
-        actualizarSlider();              
-    }
-    pintarNavSlider(); 
+        actualizarSlider();
+        console.log("click flecha arrow 2")
+        pintarNavSlider();   
+    }   
 });
 
 
@@ -83,16 +84,25 @@ arrowBack.addEventListener("click" , function() {
 //Primero valida si es el último, para traer el primer slider
 
 arrowNext.addEventListener("click" , function() {     
-    if (percentage === -300) {      
+    if (percentage === -300) {        
         percentage += 300;    
-        actualizarSlider();            
+        actualizarSlider(); 
+        console.log("click flecha next")
+        pintarNavSlider();              
     }
-    else {      
+    else {   
         percentage -= 100;    
-        actualizarSlider();       
-    }  
-    pintarNavSlider();    
+        actualizarSlider();
+        console.log("click flecha next 2")
+        pintarNavSlider();          
+    }         
 });
+
+
+
+
+
+
 
 //-----------------------Función animación SLIDER--------------------//
 
@@ -126,29 +136,37 @@ let navSlider3 = document.querySelector(".nav_slider3");
 let navSlider4 = document.querySelector(".nav_slider4");
 
 navSlider1.addEventListener("click" , function() {
-    console.log("click navSlider 1");
     navSlider1.style.backgroundColor = "black"; 
+    navSlider2.style.backgroundColor = "#fff";   
+    navSlider3.style.backgroundColor = "#fff";    
+    navSlider4.style.backgroundColor = "#fff";    
     percentage = 0;
     actualizarSlider();
 });
 
 navSlider2.addEventListener("click" , function() {
-    console.log("click navSlider 2");
     navSlider2.style.backgroundColor = "black"; 
+    navSlider1.style.backgroundColor = "#fff";   
+    navSlider3.style.backgroundColor = "#fff";    
+    navSlider4.style.backgroundColor = "#fff";      
     percentage = -100;
     actualizarSlider();      
 });
 
 navSlider3.addEventListener("click" , function() {
-    console.log("click navSlider 3");
     navSlider3.style.backgroundColor = "black"; 
+    navSlider1.style.backgroundColor = "#fff";   
+    navSlider2.style.backgroundColor = "#fff";    
+    navSlider4.style.backgroundColor = "#fff";    
     percentage = -200;
     actualizarSlider();    
 });
 
 navSlider4.addEventListener("click" , function() {
-    console.log("click navSlider 4");
     navSlider4.style.backgroundColor = "black"; 
+    navSlider1.style.backgroundColor = "#fff";   
+    navSlider2.style.backgroundColor = "#fff";    
+    navSlider3.style.backgroundColor = "#fff";    
     percentage = -300;
     actualizarSlider();   
 });
