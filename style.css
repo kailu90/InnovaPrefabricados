@@ -222,7 +222,7 @@ body {
     width: 90vw;     
     height: 100%; 
     margin: 0 auto;  
-    transform: translateX(-300%);
+    /*transform: translateX(-300%);*/
 }
 
 .slider {  
