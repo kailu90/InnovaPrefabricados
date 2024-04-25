@@ -75,7 +75,7 @@ setInterval(function () {
     if (index >= numImages) {
         index = 0; 
     }  
-},10000);
+},6000);
 
 
 
