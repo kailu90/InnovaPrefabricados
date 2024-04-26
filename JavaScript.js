@@ -60,18 +60,14 @@ let arrowBack = document.querySelector(".arrow_back")
 let arrowNext = document.querySelector(".arrow_next")
 
 arrowBack.addEventListener("click" , function() { 
-    if (percentage === 0) {                
-        percentage -= 300;    
-        actualizarSlider(); 
-        pintarNavSlider();
-        console.log("click flecha arrow")             
-    } 
-    else {
-        percentage += 100;    
-        actualizarSlider();
-        pintarNavSlider();
-        console.log("click flecha arrow 2")     
-    }   
+    if (index === 0) {                
+        index = numImages - 1;
+    } else {
+        index--;
+    }
+    percentage = index * -100;    
+    actualizarSlider(); 
+    pintarNavSlider();
 });
 
 
@@ -84,20 +80,15 @@ arrowBack.addEventListener("click" , function() {
 //Primero valida si es el último, para traer el primer slider
 
 arrowNext.addEventListener("click" , function() {     
-    if (percentage === -300) {        
-        percentage += 300;    
-        actualizarSlider();
-        pintarNavSlider(); 
-        console.log("click flecha next")
+    if (index === numImages - 1) {        
+        index = 0;
+    } else {
+        index++;
     }
-    else {   
-        percentage -= 100;    
-        actualizarSlider();
-        pintarNavSlider();
-        console.log("click flecha next 2")
-    }         
+    percentage = index * -100;    
+    actualizarSlider();
+    pintarNavSlider(); 
 });
-
 
 
 

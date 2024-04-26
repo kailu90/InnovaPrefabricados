@@ -90,11 +90,6 @@ body {
 }
 
 
-
-
-
-
-
 /******************************************
 
             ?MAIN
@@ -333,6 +328,10 @@ body {
 
 .project_three {
     background-image: url(./img/casa_rural_2.jpeg);
+}
+
+.project_four {
+    background-image: url(./img/casa_chalet2.jpeg);
 }
 
 
