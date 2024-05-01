@@ -705,3 +705,35 @@ body {
     }
 
 }
+
+@media (max-width: 400px) {
+    .contact_container {
+       margin: 0;
+    }
+
+
+    .contact_container__title {
+        max-width: 90vw;
+        margin: 20px auto;
+    }
+
+    .contact_container__title h2 {
+        display: flex;
+        text-align: center;
+        margin: 0 auto; 
+        font-size: 3rem;    
+    }
+
+    .contact_container__title h3 , .contact_container__title p {
+        display: flex;
+        text-align: center;
+        margin: 10px auto;       
+    }
+
+    
+
+    .contact_container__form {
+        padding: 10px;
+        width: 90vw;
+    }
+}
