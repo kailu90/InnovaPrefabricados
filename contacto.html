@@ -53,16 +53,15 @@
         </div>
         <div class="contact_container__form">
             <h3>Ponerse en contacto</h3>
-            <form class="contact_form_items" action="">
-                
-                <label class="label label_name" for="">Nombres:</label>
-                <input class="input input_name" type="text" placeholder="Ingresa tu nombre">
-                <label class="label label_email"  for="">Correo:</label>
-                <input class="input input_email" type="email" placeholder="Ingresa tu correo">
-                <label class="label label_phone"  for="">Teléfono:</label>
-                <input class="input input_phone" type="number" placeholder="Ingresa tu número de celular">
-                <label class="label label_message"  for="">Mensaje:</label>
-                <input class="input input_message" type="text" placeholder="Ingresa tu mensaje">
+            <form class="contact_form_items" action="procesar_formulario.php" method="post">               
+                <label class="label label_name" for="input_name">Nombres:</label>
+                <input id="input_name" class="input input_name" type="text" placeholder="Ingresa tu nombre">
+                <label class="label label_email"  for="input_email">Correo:</label>
+                <input id="input_email" class="input input_email" type="email" placeholder="Ingresa tu correo">
+                <label class="label label_phone"  for="input_phone">Teléfono:</label>
+                <input id="input_phone" class="input input_phone" type="number" placeholder="Ingresa tu número de celular">
+                <label class="label label_message"  for="input_message">Mensaje:</label>
+                <input id="input_message" class="input input_message" type="text" placeholder="Ingresa tu mensaje">
                 <button class="btn btn_form">ENVIAR</button>
             </form>
         </div>
