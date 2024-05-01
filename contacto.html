@@ -1,27 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innova Prefabricados/Contacto</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+        <title>Innova Prefabricados - Contacto</title>
+    </head>
 <body>
+    <header class="header_container">
+        <div class="header_logo_container">
+            <a href="./index.html"><img src="./img/logo.jpg" alt="logo innova prefabricados"></a>
+        </div>
+        <div class="header_navbar_container">
+            <ul class="header_navbar">
+                <a href="./index.html">
+                    <li>INICIO</li>
+                </a>
+                <a href="">
+                    <li>NOSOTROS</li>
+                </a>
+                <a href="./index.html#projects">
+                    <li>PROYECTOS</li>
+                </a>
+                <a href="./index.html#galery">
+                    <li>GALERIA</li>
+                </a>
+                <a href="./contacto.html">
+                    <li>CONTACTO</li>
+                </a>
+            </ul>
+        </div>
+    </header>
     <div class="contact_container">
         <div class="contact_container__title">
             <h2>CONTACTO</h2>
-            <h3>Deja tus datos, nosotros nos comunicamos contigo!</h3>
+            <h3>¡Déjanos Ayudarte a Hacer tu Proyecto Realidad!</h3>
+            <p>En Innova Prefabricados, estamos comprometidos a hacer que tus ideas tomen forma. 
+            Queremos ser parte de tu proyecto y convertirlo en una realidad palpable. Por eso,
+            te invitamos a completar este breve formulario con tus datos. Nosotros nos encargaremos
+            de contactarte lo más pronto posible para discutir los detalles y comenzar a trabajar juntos.</p>
+                
+            <p>Ya sea que prefieras una llamada telefónica, un correo electrónico o un mensaje por WhatsApp, 
+            estamos aquí para adaptarnos a tus preferencias. No dudes en dejarnos tus datos y pronto 
+            estaremos en contacto contigo para comenzar esta emocionante aventura.</p>
+                
+            <p>¡Tu proyecto es nuestro compromiso!</p>
+        
         </div>
         <div class="contact_container__form">
-            <form action="">
-                <label for="">Nombres:</label>
-                <input type="text">
-                <label for="">Correo:</label>
-                <input type="email">
-                <label for="">Teléfono:</label>
-                <input type="number">
+            <h3>Ponerse en contacto</h3>
+            <form class="contact_form_items" action="">
+                
+                <label class="label label_name" for="">Nombres:</label>
+                <input class="input input_name" type="text" placeholder="Ingresa tu nombre">
+                <label class="label label_email"  for="">Correo:</label>
+                <input class="input input_email" type="email" placeholder="Ingresa tu correo">
+                <label class="label label_phone"  for="">Teléfono:</label>
+                <input class="input input_phone" type="number" placeholder="Ingresa tu número de celular">
+                <label class="label label_message"  for="">Mensaje:</label>
+                <input class="input input_message" type="text" placeholder="Ingresa tu mensaje">
+                <button class="btn btn_form">ENVIAR</button>
             </form>
         </div>
     </div>
+    <footer class="footer_container">
+        <div class="footer_address_container footer_item">
+            <div><img src="./img/icon_address.png" alt="address factory"></div>
+            <div class="text_container">
+                <h2>Dirección</h2>
+                <p>Cra. 11 # 70 D - 06 Bodega 1 Agua Azul Dosquebradas/Risaralda</p>
+            </div>
+        </div>
+        <div class="footer_contact_container footer_item">
+            <div><img src="./img/icon_phone.png" alt="phone contact"></div>
+            <div class="text_container">
+                <h2>Llámanos</h2>
+                <p>Línea de atención: (+57) 3114338718</p>
+            </div>
+        </div>
+        <div class="footer_mail_container footer_item">
+            <div><img src="./img/icon_email.png" alt="mail contact"></div>
+            <div class="text_container">
+                <h2>Escríbenos</h2>
+                <p>innovaprefabricados@hotmail.com</p>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
