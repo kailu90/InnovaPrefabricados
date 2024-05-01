@@ -506,6 +506,18 @@ body {
     padding: 50px; 
 }
 
+.partners_item {
+    margin: 0 auto;
+    width: min-content;
+    height: min-content;
+    box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);   
+}
+
+.partners_item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .partners_item img {
     width: 256px;
     height: 256px;
