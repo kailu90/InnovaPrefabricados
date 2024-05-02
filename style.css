@@ -62,7 +62,7 @@ body {
     display: none;
     position: absolute;
     top: 40px;
-    left: 60px;    
+    left: 30px;    
     flex-direction: column;
     margin: 5px 0;
     width: 40px;
@@ -151,8 +151,15 @@ body {
     .header_navbar {
         flex-direction: column;
         text-align: center;
+        width: 100vw;
     }
 
+
+    .header_navbar li:hover {
+        border: 1px solid;
+        border-color: var(--primary);
+        width: 100%;
+    }
 }
 
 
@@ -756,7 +763,7 @@ body {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .contact_container {
        margin: 0;
     }
@@ -783,7 +790,7 @@ body {
     
 
     .contact_container__form {
-        padding: 10px;
+        padding: 30px;
         width: 90vw;
     }
 }

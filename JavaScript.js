@@ -1,3 +1,36 @@
+let mainBurguer = document.getElementById("header_main_burguer");
+let headerNavbar = document.querySelector(".header_navbar_container");
+let displayMain  = 0;
+
+//-----------Función mostrar menú hamgurguesa mobile--------------------//
+
+//Muestra el menú en la versión mobile
+
+
+mainBurguer.addEventListener("click" , function mostrarMenu() { 
+  
+    if (displayMain  == 0) {
+        headerNavbar.style.display = "flex"
+        displayMain += 1;
+        console.log("entrando en menú mobile #1")    
+    } else if (displayMain  == 1) {
+        headerNavbar.style.display = "none"; 
+        displayMain -= 1;
+        console.log("entrando en menú mobile #2")     
+    }        
+});
+
+
+
+
+
+
+
+
+
+
+
+
 let slider = document.querySelector(".slider_container_elements");
 
 let index = 0;
