@@ -178,8 +178,12 @@ body {
 }
 
 
+@media (max-width: 600px) {
+    .main_container {
+        margin-top: 50px;
+    }
 
-
+}
 
 
 
@@ -187,7 +191,7 @@ body {
 
 /******************************************
 
-            ?ARROW
+            ?SLIDER
 
 ******************************************/
 
@@ -209,25 +213,12 @@ body {
     height: 50px;    
 }
 
-.back_arrow_slider {  
-    position: absolute;
-    transform: rotate(180deg);
-    top: 200px;
-    left: 20px;    
-}
-
 .arrow:hover {
     opacity: 0.5;
 }
 
 .arrow img {
     width: 30px;
-}
-
-.next_arrow_slider {
-    position: absolute;    
-    top: 200px;
-    right: 30px;
 }
 
 .arrow-icon {
@@ -238,6 +229,21 @@ body {
     cursor: pointer;
     opacity: 0.7;
 }
+
+.back_arrow_slider {  
+    position: absolute;
+    transform: rotate(180deg);
+    top: 200px;
+    left: 20px;    
+}
+
+.next_arrow_slider {
+    position: absolute;    
+    top: 200px;
+    right: 30px;
+}
+
+
 
 .nav_slider_container {
     display: flex;
@@ -267,27 +273,6 @@ body {
 .nav_slider.activo {
     background-color: black;    
 }
-
-@media (max-width: 400px) {
-    .arrow_container {
-        height: max-content;
-    }
-    .nav_slider_container {
-        height: max-content;
-    }
-
-    
-}
-
-
-
-
-
-/******************************************
-
-            ?SLIDER
-
-******************************************/
 
 .slider_container {
     position: relative;
@@ -320,8 +305,6 @@ body {
     object-fit: contain;
 }
 
-
-
 @media (max-width: 1000px) {
 
     .slider_container {
@@ -330,17 +313,20 @@ body {
     
     .back_arrow_slider {
         top: 100px;
+        background-color: var(--secondary);
+        border-radius: 50%;
     }
 
     .next_arrow_slider {
         top: 100px;
+        background-color: var(--secondary);
+        border-radius: 50%;
     }
 
 
 }
 
-
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 
     .slider_container {
         height: 150px;
@@ -357,11 +343,10 @@ body {
     }
 
     .arrow {
-        width: 15px;
-        height: 15px;    
+        width: 20px;
+        height: 20px;    
     }
    
-
     .arrow img {
         width: 15px;
     }
@@ -372,6 +357,20 @@ body {
     }
 
 }
+
+@media (max-width: 400px) {
+    
+    .arrow_container {
+        height: max-content;
+    }
+    .nav_slider_container {
+        height: max-content;
+    }
+    
+}
+
+
+
 
 
 
@@ -648,6 +647,11 @@ body {
         align-items: center;
     }
 
+    .footer_item {
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
 
 
@@ -759,6 +763,11 @@ body {
         padding: 50px 20px;
         align-items: center;
         margin-top: 0;
+    }
+
+    .contact_container__title {
+        text-align: center;
+        margin: 0;
     }
 
 }
