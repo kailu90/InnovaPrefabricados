@@ -185,6 +185,15 @@ body {
 
 }
 
+@media (max-width: 400px) {
+    .main_container {
+       margin-top: 0;
+    }
+}
+
+
+
+
 
 
 
@@ -310,7 +319,7 @@ body {
     .slider_container {
         height: 300px;
     }
-    
+
     .back_arrow_slider {
         top: 100px;
         background-color: var(--secondary);
@@ -343,6 +352,7 @@ body {
     }
 
     .arrow {
+        display: none;
         width: 20px;
         height: 20px;    
     }
@@ -358,11 +368,21 @@ body {
 
 }
 
-@media (max-width: 400px) {
+
+@media (max-width: 599px) {
+
+  
     
+}
+
+
+
+@media (max-width: 400px) {
+
     .arrow_container {
         height: max-content;
     }
+
     .nav_slider_container {
         height: max-content;
     }
