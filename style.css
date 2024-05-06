@@ -546,6 +546,14 @@ body {
         font-size: 1rem;
     }
     
+    .card__back p {
+        font-size: 0.4rem;
+    }
+    
+    .card__back a:nth-child(3)  {
+        font-size: 0.4rem;
+        height: 20px;  
+    }
     
 
 }
