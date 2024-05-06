@@ -112,28 +112,6 @@ body {
     position: relative;
 }
 
-.header_navbar__projects .projects_list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 40px;
-    height: min-content;
-    z-index: 100;
-    background-color: #fff;
-    border-radius: 10px;
-    transition: display 0.3s ease;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-}
-
-.header_navbar__projects:hover .projects_list {
-    display: flex;   
-}
-
-.header_navbar__projects .projects_list li:hover {
-    border: 2px solid transparent;
-    opacity: 0.5;
-}
-
 @media (max-width: 1000px) {
     .header_container {
         flex-direction: column;
@@ -167,7 +145,7 @@ body {
         top: 100px;
         left: 0;       
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh - 100px);
         z-index: 1000;
         background-color: #fff;
     }
@@ -548,6 +526,30 @@ body {
     background-image: url(./img/casa_chalet2.jpeg);
 }
 
+@media (max-width: 400px) {
+
+    .project__items {
+        grid-template-columns: repeat(auto-fill, 150px);  
+    }
+
+    .project_title  {
+        font-size: 1.4rem;
+        margin: 20px auto;
+    }
+
+    .card {
+        width: 130px;
+        height: 130px;
+    }
+
+    .card__front h2 {
+        font-size: 1rem;
+    }
+    
+    
+
+}
+
 
 
 
@@ -588,7 +590,7 @@ body {
     margin: 0 0 100px 0;
     gap: 20px;
     overflow-x: scroll;
-    padding: 50px; 
+    padding: 0 50px;
 }
 
 .galery_item img {
@@ -598,6 +600,18 @@ body {
 }
 
 
+@media (max-width: 400px) {
+    .galery_title  {
+        font-size: 1.4rem;
+        margin: 20px auto;
+    }
+
+    .galery_item img {
+        width: 130px;
+        height: 130px; 
+    }
+
+}
 
 
 
@@ -620,7 +634,7 @@ body {
 
 .partners_title {
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 0 0 0;
     font-size: 3rem;    
     width: max-content;
     color: var(--primary);
@@ -638,8 +652,8 @@ body {
     justify-content: center;
     grid-template-columns: repeat(auto-fill, 300px); 
     grid-gap: 20px;   
-    margin: 0 0 100px 0;  
-    padding: 50px; 
+    margin: 0 0 0 0;  
+    padding: 50px 0 100px 0;
 }
 
 .partners_item {
@@ -661,10 +675,31 @@ body {
 }
 
 @media (max-width: 400px) {
+
+    .partners_title {
+        font-size: 1.4rem;
+    }
+
+
+
     .partners_item {
         display: flex;
         justify-content: center;
     }
+
+
+    .partners_items_container {
+        grid-template-columns: repeat(auto-fill, 130px);
+    }
+   
+    .partners_item img {
+        width: 130px;
+        height: 130px;
+    }
+
+
+
+
 }
 
 
