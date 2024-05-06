@@ -196,3 +196,42 @@ navSlider4.addEventListener("click" , function() {
 });
 
 
+
+//-----------------------Función para ver VIDEOS CARD PROJECTS--------------------//
+
+//Cuando se da click a conocer más de la card se muestra el video 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const videoLink = document.getElementById('videoLink');
+    
+    videoLink.addEventListener('click', function (event) {
+        event.preventDefault(); // Evita la acción predeterminada del enlace
+        
+        const videoSrc = this.getAttribute('href');
+        reproducirVideo(videoSrc);
+    });
+
+    function reproducirVideo(src) {
+        // Crear un elemento de video
+        const video = document.createElement('video');
+        video.setAttribute('controls', 'controls'); // Añadir controles de video
+        video.style.width = '100%'; // Establecer el ancho al 100% del contenedor
+        
+        // Crear una fuente de video
+        const source = document.createElement('source');
+        source.setAttribute('src', src);
+        source.setAttribute('type', 'video/quicktime'); // Ajustar el tipo MIME según el formato de video
+        
+        // Adjuntar la fuente de video al elemento de video
+        video.appendChild(source);
+        
+        // Reemplazar el enlace con el elemento de video
+        const parentElement = videoLink.parentElement;
+        parentElement.replaceChild(video, videoLink);
+        
+        // Reproducir el video
+        video.play();
+    }
+});
