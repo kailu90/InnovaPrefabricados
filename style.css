@@ -538,8 +538,8 @@ body {
     }
 
     .card {
-        width: 130px;
-        height: 130px;
+        width: 160px;
+        height: 160px;
     }
 
     .card__front h2 {
@@ -547,11 +547,11 @@ body {
     }
     
     .card__back p {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
     
     .card__back a:nth-child(3)  {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
         height: 20px;  
     }
     
