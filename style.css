@@ -528,6 +528,12 @@ body {
 
 @media (max-width: 400px) {
 
+    .project_container {
+        margin: 10px 0;
+        padding: 0 0 30px 0;
+    }
+    
+
     .project__items {
         grid-template-columns: repeat(auto-fill, 150px);  
     }
@@ -614,6 +620,11 @@ body {
         margin: 20px auto;
     }
 
+    .galery_items_container {
+        margin: 0 0 30px 0;
+    }
+   
+
     .galery_item img {
         width: 130px;
         height: 130px; 
@@ -698,6 +709,7 @@ body {
 
     .partners_items_container {
         grid-template-columns: repeat(auto-fill, 130px);
+        padding: 50px 0 50px 0;
     }
    
     .partners_item img {
@@ -773,6 +785,17 @@ body {
     .footer_item {
         flex-direction: column;
         text-align: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .footer_container p {
+        font-size: 1rem;
+    }
+
+    .footer_container h2 {
+        font-size: 1rem;
     }
 
 }
